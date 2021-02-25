@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/wagaru/Recodar-backend/internal/config"
-	"github.com/wagaru/Recodar-backend/internal/delivery/http"
-	"github.com/wagaru/Recodar-backend/internal/repository"
-	"github.com/wagaru/Recodar-backend/internal/usecase"
+	"github.com/wagaru/Recodar/server/internal/config"
+	"github.com/wagaru/Recodar/server/internal/delivery/http"
+	"github.com/wagaru/Recodar/server/internal/repository"
+	"github.com/wagaru/Recodar/server/internal/usecase"
 )
 
 func main() {

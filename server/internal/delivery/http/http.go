@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	"github.com/wagaru/Recodar-backend/internal/usecase"
+	"github.com/wagaru/Recodar/server/internal/usecase"
 )
 
 type httpDelivery struct {

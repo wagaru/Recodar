@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/wagaru/Recodar-backend/internal/config"
+	"github.com/wagaru/Recodar/server/internal/config"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

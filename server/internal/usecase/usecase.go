@@ -1,6 +1,6 @@
 package usecase
 
-import "github.com/wagaru/Recodar-backend/internal/repository"
+import "github.com/wagaru/Recodar/server/internal/repository"
 
 type Usecase interface {
 }
