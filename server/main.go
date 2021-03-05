@@ -25,14 +25,15 @@ func main() {
 	if err != nil {
 		fmt.Printf("Init MongoDB failed: %v", err)
 	}
+	defer repo.Disconnect()
 	log.Println("Init Mongo DB completed.")
 
 	// Init usecase
-	usecase := usecase.NewUsecase(repo)
+	usecase := usecase.NewUsecase(repo, config)
 	log.Println("Init usecase completed.")
 
 	// Init delivery
-	delivery := http.NewHttpDelivery(usecase)
+	delivery := http.NewHttpDelivery(usecase, config)
 	log.Println("Init delivery completed.")
 
 	delivery.Run(config.ServerPort)
